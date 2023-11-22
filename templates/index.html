@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Detection</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            text-align: center;
+            color: #333;
+        }
+
+        .form {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .label {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        .button {
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .prediction {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .link:hover {
+            color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Spam Detection</h1>
+        <form action="/predict" method="post" class="form">
+            <label for="new_text" class="label">Enter Text:</label>
+            <textarea id="new_text" name="new_text" rows="4" cols="50" class="textarea" required></textarea><br>
+            <input type="submit" value="Predict" class="button">
+        </form>
+        {% if prediction %}
+            <p class="prediction">{{ prediction }}</p>
+        {% endif %}
+        <div class="links">
+            <a href="https://github.com/Pramod858" class="link" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/pramod-badiger/" class="link" target="_blank">LinkedIn</a>
+            <a href="https://pramod858.github.io/Portfolio/" class="link" target="_blank">Portfolio</a>
+        </div>
+    </div>
+</body>
+</html>
