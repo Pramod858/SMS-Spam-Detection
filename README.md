@@ -29,7 +29,7 @@ This project implements a simple spam detection system using a Naive Bayes class
     ```bash
     docker build -t spam_detection_app .
     ```
-    ###or
+    or
    ```bash
     docker build -t spam_detection_app -f Dockerfile.txt .
     ```
