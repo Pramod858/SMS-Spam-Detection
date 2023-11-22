@@ -1,6 +1,6 @@
 # SMS-Spam-Detection with Flask
 
-![SMS Spam Detection](https://github.com/Pramod858/SMS-Spam-Detection/assets/80105491/870c086f-3d4e-4e11-a085-aec3fc74d913)
+![SMS Spam Detection](https://github.com/Pramod858/SMS-Spam-Detection/assets/80105491/ed8551a6-4979-42d6-87e2-a43da49fc696)
 
 This project implements a simple spam detection system using a Naive Bayes classifier and exposes it through a Flask web application. It includes Swagger documentation for easy testing.
 
